@@ -35,7 +35,7 @@ footer {
     color: white;
 }
 
-/* */
+/* test*/
 
 *{
     margin: 0;
@@ -50,7 +50,7 @@ body {
     background: #000;
 }
 .container {
-    position relative;
+    position: relative;
     width: 100%;
     display: flex;
     justify-content: center;
