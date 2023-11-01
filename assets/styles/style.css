@@ -1,6 +1,36 @@
 @charset "UTF-8"
+
+ /* Document
+   ========================================================================== */
+
+:root
+{
+    --body-background-color: #222;
+    --body-text-color: #EEE;
+}
+
+@media(prefers-colors-scheme:ligth)
+{
+    :root
+    {
+        --body-background-color: #CCC;
+        --body-background-color: #000;
+    }
+}
+
+ /* Sections
+   ========================================================================== */
+
 #lang-nav .l-cluster
 {
     justify-content: flex-end;
-    margin: ;
+    margin: 800px;
+}
+
+body
+{
+    background-color:var(--body-background-color);
+    color:var(--body-text-color);
+    margin: auto;
+    width:800px;
 }
