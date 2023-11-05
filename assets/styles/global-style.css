@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+/* Global Variable
+  ========================================================================== */
+
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+html body {
+  margin: 0;
+  padding: 0;
+}
+header {
+  overflow: hidden;
+  background-color: white;
+}
+main {
+  background-color: white;
+  padding: 10px;
+  height: 200px;
+}
+footer {
+  background-color: #000000;
+  padding: 10px;
+  overflow: hidden;
+}
+
+/* Class
+  ========================================================================== */
+
+.footer-nav_policies {
+  text-align: center;
+}
+.footer-ul-policies {
+  list-style-type: none;
+  border-top: 2px solid #fff000;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.footer-ul-policies a {
+  display: inline-block;
+  color: #00ccff;
+  padding: 10px 10px;
+  text-decoration: none;
+}
+.footer-ul-policies a:hover {
+  color: #0000FF;
+}
+/*.footer-li-policies li {
+}*/
