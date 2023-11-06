@@ -17,11 +17,11 @@ html body {
   padding: 0;
 }
 header {
-  overflow: hidden;
   background-color: #000000;
 }
 main {
-  background-color: grey;
+  background-color: url('../images/background/Light_Painting_By_SMOCKINGART.jpg');
+  background-size: cover;
   padding: 10px;
   height: 200px;
 }
@@ -29,9 +29,23 @@ footer {
   background-color: #000000;
   padding: 10px;
   overflow: hidden;
+  position: relative;
 }
 button {
   text-transform: none;
+}
+img {
+  max-width: 100%;
+  vertical-align: middle;
+  border-style: none;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+path {
+  stroke: #2FF3E0;
+}
+path:hover {
+  stroke: #F51720;
 }
 
 /* Class
@@ -41,8 +55,8 @@ button {
 .container-button {
   padding: 0.01em 16px;
   position: absolute;
-  left: 0;
-  top: 0;
+  left: 0px;
+  top: 0px;
 }
 .button-header {
   color: purple;
@@ -62,29 +76,27 @@ button {
   flex-flow: column;
   margin-right: 10px;
   margin-top: 1px;
-  position: relative;
+  position: fixed;
 }
 .burger-icon-line {
-  background: #fff000;
-  transform: ;
+  background: #F8D210;
   height: 3px;
   margin-bottom: 4px;
   width: 18px;
 }
+.burger-icon-line:hover{
+  background-color: #F51720;
+}
 .burger-icon-line:nth-child(2) {
   transform: translate(7px);
 }
+/* -- img */
+.container-img {
+  object-fit: cover;
+  height: auto;
+}
 
 /* --- Main --- */
-.container-body {
-  position: relative;
-  color: #fff;
-  background-image: url('../images/background/Light_Painting_By_SMOCKINGART.jpg');
-  min-height: 100%;
-  background-position: center;
-  background-size: cover;
-  z-index: 2;
-}
 .container-logo {
   position: absolute;
   top: 50%;
@@ -99,61 +111,98 @@ button {
 /* --- */
 .module-content {
   margin: auto;
-  background-color: ;
   position: relative;
-  padding: 0;
-  outline: 0;
+  padding: 0px;
+  outline: 0px;
 }
 .container-menu {
-  z-index: 3;
   display: none;
   position: fixed;
-  left: 0;
-  top: 0;
+  left: 0%;
+  top: 0%;
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: purple;
+  background-color: #C2B7C8;
 }
 .button-exit {
-  color: grey;
+  color: #F8D210;
 }
 
 /* --- Social Network --- */
-
 .global-social-network {
-
+  background-color: #000000;
 }
 .container-social-network {
-
+  position: grid;
+  grid-template-rows: repeat(2, auto);
+  gap: 10px;
+  justify-items: center;
+  align-items: center;
+  height: 100%;
 }
-.list-social-network {
-
+.ul-social-network {
+  list-style-type: none;
+  display: flex;
+  margin: 0px;
+  padding: 10px;
+}
+.ul-social-network li {
+  margin-right: 10px;
 }
 
 /* --- Footer --- */
 .footer-nav_policies {
+  align-items: center;
   text-align: center;
 }
+
 .footer-ul-policies {
   list-style-type: none;
-  border-top: 2px solid #fff000;
+  border-bottom: 2px solid #F8D210;
   text-align: center;
-  margin: 0;
+  margin-top: 0;
   padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  justify-items: center;
 }
+
 .footer-ul-policies a {
-  display: inline-block;
-  color: #00ccff;
-  padding: 10px 10px;
+  color: #2FF3E0;
+  padding: 10px;
   text-decoration: none;
 }
+
 .footer-ul-policies a:hover {
-  color: #0000ff;
+  color: #F8D210;
 }
+
+
 
 /* ID
   ========================================================================== */
-#main {
 
-}
+/* --- Code couleur du site version pro --- 
+
+#Cod Gray
+  #060606
+#Chantelle
+  #C2B7C8
+#Danube
+  #6895D4
+#Waikawa Gray
+#54689E
+
+/* --- Code couleur du site version fun ---
+
+# Black
+  #000000
+#Cyan
+  #2FF3E0
+#Gold             | Yellow
+  #F8D210         | fff000
+#Pink
+  #FA26A0
+#Chili Pepper
+  #F51720
