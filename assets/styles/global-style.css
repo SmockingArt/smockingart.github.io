@@ -3,20 +3,25 @@
 /* Global Variable
   ========================================================================== */
 
-* {
+html {
   box-sizing: border-box;
   font-family: sans-serif;
 }
+*, *::before, *::after {
+  box-sizing: inherit;
+}
 html body {
+  font-size: 15px;
+  line-height: 1.5;
   margin: 0;
   padding: 0;
 }
 header {
   overflow: hidden;
-  background-color: white;
+  background-color: #000000;
 }
 main {
-  background-color: white;
+  background-color: grey;
   padding: 10px;
   height: 200px;
 }
@@ -25,10 +30,168 @@ footer {
   padding: 10px;
   overflow: hidden;
 }
+button {
+  text-transform: none;
+}
 
 /* Class
   ========================================================================== */
 
+  /* --- Header --- */
+.container-button {
+  padding: 0.01em 16px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.button-header {
+  color: purple;
+  background-color: transparent;
+  border: none;
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.burger-menu-header {
+  width: 30px;
+  display: flex;
+  flex-flow: column;
+  margin-right: 10px;
+  margin-top: 1px;
+  position: relative;
+}
+.burger-icon-line {
+  background: #fff000;
+  transform: ;
+  height: 3px;
+  margin-bottom: 4px;
+  width: 18px;
+}
+.burger-icon-line:nth-child(2) {
+  transform: translate(7px);
+}
+
+/* --- Main --- */
+.container-body {
+  position: relative;
+  color: #fff;
+  background-image: url('../images/background/Light_Painting_By_SMOCKINGART.jpg');
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+}
+.container-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
+.headline {
+  font-size: 58px;
+}
+
+/* --- Annimation --- */
+
+/*.container-annimation {
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  --from: 80px;
+  --to: 200px;
+  --size: 32px;
+  --time: 7s;
+  --count: 51;
+  --turns: 6;
+}
+.circle {
+  position: absolute;
+  width: var(--size);
+  height: var(--size);
+  --delay: calc(var(--time) / var(--count) * -1 * var(--i));
+  rotate: calc(var(--turns) * 1turn / var(--count) * var(--i));
+  transform: rotate(calc(var(--turns) * 1turn / var(--count) * var(--i)));
+  animation: circle var(--time) var(--delay) ease-in-out infinite;
+}
+.circle:nth-child(n + var(--count)) {
+  display: none;
+}
+.circle::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-color: white;
+  transform-origin: center center;
+  animation: circleSize var(--time) var(--delay) ease-in-out;
+}
+.container-annimation .circle::before {
+  background-color: hsl(calc(360deg / var(--count) * var(--i)), 100%, 50%);
+}
+
+@keyframes circle {
+  from {
+    transform: translateY(var(--from));
+  }
+  to {
+    transform: translateY(var(--to));
+  }
+}
+@keyframes circleSize {
+  0%, 100% {
+    transform: scale(0);
+  }
+  25%, 50% {
+    transform: scale(1);
+  }
+}*/
+
+/* --- */
+.module-content {
+  margin: auto;
+  background-color: ;
+  position: relative;
+  padding: 0;
+  outline: 0;
+}
+.container-menu {
+  z-index: 3;
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: purple;
+}
+.button-exit {
+  color: grey;
+}
+
+/* --- Social Network --- */
+
+.global-social-network {
+
+}
+.container-social-network {
+
+}
+.list-social-network {
+  
+}
+
+/* --- Footer --- */
 .footer-nav_policies {
   text-align: center;
 }
@@ -46,7 +209,11 @@ footer {
   text-decoration: none;
 }
 .footer-ul-policies a:hover {
-  color: #0000FF;
+  color: #0000ff;
 }
-/*.footer-li-policies li {
-}*/
+
+/* ID
+  ========================================================================== */
+#menu {
+
+}
