@@ -13,17 +13,16 @@ html {
 html body {
   font-size: 15px;
   line-height: 1.5;
-  margin: 0;
-  padding: 0;
-}
-header {
-  background-color: #000000;
+  margin: 0px;
+  padding: 0px;
 }
 main {
-  background-color: url('../images/background/Light_Painting_By_SMOCKINGART.jpg');
+  background-image: url("../images/background/Light_Painting_By_SMOCKINGART.jpg");
   background-size: cover;
-  padding: 10px;
-  height: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 500px;
+  width: auto;
 }
 footer {
   background-color: #000000;
@@ -42,7 +41,7 @@ img {
   overflow: clip;
 }
 path {
-  stroke: #2FF3E0;
+  stroke: #80c2fd;
 }
 path:hover {
   stroke: #F51720;
@@ -59,7 +58,6 @@ path:hover {
   top: 0px;
 }
 .button-header {
-  color: purple;
   background-color: transparent;
   border: none;
   display: inline-block;
@@ -82,7 +80,7 @@ path:hover {
   background: #F8D210;
   height: 3px;
   margin-bottom: 4px;
-  width: 18px;
+  width: 22px;
 }
 .burger-icon-line:hover{
   background-color: #F51720;
@@ -97,15 +95,14 @@ path:hover {
 }
 
 /* --- Main --- */
-.container-logo {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
-}
 .headline {
-  font-size: 58px;
+  color: #C2B7C8;
+  position: absolute;
+  font-style: italic;
+  right: 20px;
+  top: 0px;
+  text-align: center;
+  font-size: 24px;
 }
 
 /* --- */
@@ -129,7 +126,9 @@ path:hover {
   color: #F8D210;
 }
 
-/* --- Social Network --- */
+/* --- Footer --- */
+
+/* Social Network */
 .global-social-network {
   background-color: #000000;
 }
@@ -146,12 +145,11 @@ path:hover {
   display: flex;
   margin: 0px;
   padding: 10px;
-}
-.ul-social-network li {
-  margin-right: 10px;
+  border-left: 2px solid #F8D210;
 }
 
-/* --- Footer --- */
+/* Policies */
+
 .footer-nav_policies {
   align-items: center;
   text-align: center;
@@ -159,7 +157,7 @@ path:hover {
 
 .footer-ul-policies {
   list-style-type: none;
-  border-bottom: 2px solid #F8D210;
+  border-bottom: 3px solid #F8D210;
   text-align: center;
   margin-top: 0;
   padding: 0;
@@ -169,7 +167,7 @@ path:hover {
 }
 
 .footer-ul-policies a {
-  color: #2FF3E0;
+  color: #80c2fd;
   padding: 10px;
   text-decoration: none;
 }
