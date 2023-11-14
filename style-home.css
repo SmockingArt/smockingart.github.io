@@ -279,7 +279,7 @@ button:-moz-focusring,
   padding-bottom: 32px !important;
 }
 .jumbo {
-  font-size: 64px !important;
+  font-size: 64px;
 }
 .image {
   max-width: 100%;
@@ -411,5 +411,11 @@ padding-64 {
 @media (max-width: 992px) and (min-width: 601px) {
   .hide-medium {
     display: none !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .jumbo {
+    font-size: 42px;
   }
 }
