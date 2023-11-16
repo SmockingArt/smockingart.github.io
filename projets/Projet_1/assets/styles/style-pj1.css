@@ -33,6 +33,8 @@ li {
 .flex-list ul {
 	list-style: none;
 	padding: 0;
+	flex-wrap: wrap;
+	justify-content: flex-start;
 }
 .gs-uppercase {
 	text-transform: uppercase; 
