@@ -337,6 +337,7 @@ padding-64 {
 .ul-social-network li {
   list-style: none;
 }
+
 /* card */
 
 .container-card {
@@ -358,7 +359,7 @@ padding-64 {
 }
 
 .card:not(:first-child) {
-    margin-left: -50px;
+  margin-left: -50px;
 }
 
 .card:hover {
@@ -400,8 +401,13 @@ padding-64 {
   z-index: 3;
   width: 0px;
   height: 100%;
-  background: rgb(0,154,217);
-  background: linear-gradient(90deg, rgb(0, 188, 217) 0%, rgb(22, 217, 0) 50%, rgb(191, 255, 0) 100%);
+  background: rgb(0, 154, 217);
+  background: linear-gradient(
+    90deg,
+    rgb(0, 188, 217) 0%,
+    rgb(22, 217, 0) 50%,
+    rgb(191, 255, 0) 100%
+  );
   transition: 0.6s ease-out;
 }
 
@@ -473,7 +479,6 @@ svg {
 
   .sidebar {
     display: block;
-
   }
 }
 
@@ -486,5 +491,33 @@ svg {
 @media (max-width: 430px) {
   .jumbo {
     font-size: 42px;
+  }
+}
+
+@media (max-width:900px) {
+  .card {
+    width: 140px;
+    height: 140px;
+  }
+  .emptybar {
+    width: 50%;
+    height: 50%;
+  }
+  .filledbar {
+    height: 35%;
+  }
+}
+
+@media (max-width:900px) {
+  .card {
+    width: 80px;
+    height: 140px;
+  }
+  .emptybar {
+    width: 35%;
+    height: 35%;
+  }
+  h3 {
+    font-size: 14px;
   }
 }
