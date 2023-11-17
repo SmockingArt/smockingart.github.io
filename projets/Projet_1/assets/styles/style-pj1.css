@@ -30,11 +30,15 @@ li {
 .flex-container ul {
 	display: flex;
 }
+.flex-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
 .flex-list ul {
 	list-style: none;
 	padding: 0;
-	flex-wrap: wrap;
-	justify-content: flex-start;
+	
 }
 .gs-uppercase {
 	text-transform: uppercase; 
@@ -51,8 +55,17 @@ li {
 }
 .footer-size {
 	font-size:10px;
+	line-height: 1em;
+}
+.footer-size a{
+	line-height: 1.2;
+}
+.flex-list-footer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
 }
 .flex-footer ul {
+	list-style: none;
 	display: flex;
-	justify-content: flex-start;
 }

@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+* {
+	box-sizing: inherit;
+}
+
+h2 {
+	font-size: 24px;
+}
+.container-header {
+	display: grid;
+	grid-template-columns: 15px repeat(5, 1fr) 15px;
+	grid-template-rows: auto;
+}
+.title {
+
+}
+.header-nav {
+
+}
+.header-nav ul {
+
+}
